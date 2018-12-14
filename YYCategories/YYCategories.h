@@ -45,6 +45,11 @@ FOUNDATION_EXPORT const unsigned char YYCategoriesVersionString[];
 #import <YYCategories/UIBezierPath+YYAdd.h>
 #import <YYCategories/CALayer+YYAdd.h>
 #import <YYCategories/YYCGUtilities.h>
+
+//DTAdd
+#import <YYCategories/UIButton+DTAdd.h>
+#import <YYCategories/UIView+DTAdd.h>
+
 #else
 #import "YYCategoriesMacro.h"
 #import "NSObject+YYAdd.h"
@@ -77,5 +82,10 @@ FOUNDATION_EXPORT const unsigned char YYCategoriesVersionString[];
 #import "UIBezierPath+YYAdd.h"
 #import "CALayer+YYAdd.h"
 #import "YYCGUtilities.h"
+
+//DTAdd
+#import "UIButton+DTAdd.h"
+#import "UIView+DTAdd.h"
+
 #endif
 
