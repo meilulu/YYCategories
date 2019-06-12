@@ -1,15 +1,14 @@
 //
-//  UIButton+DTAdd.m
-//  DTCategories
+//  UIButton+Supplement.m
+//  Demo
 //
-//  Created by 树妖 on 2018/10/26.
-//  Copyright © 2018年 树妖. All rights reserved.
+//  Created by 树妖 on 2019/6/12.
+//  Copyright © 2019 树妖. All rights reserved.
 //
 
-#import "UIButton+DTAdd.h"
+#import "UIButton+Supplement.h"
 
-@implementation UIButton (DTAdd)
-
+@implementation UIButton (Supplement)
 - (void)startWithTime:(NSInteger)timeLine title:(NSString *)title countDownTitle:(NSString *)subTitle mainColor:(UIColor *)mColor countColor:(UIColor *)color {
     
     //倒计时时间

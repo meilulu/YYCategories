@@ -1,16 +1,16 @@
 //
-//  UIButton+DTAdd.h
-//  DTCategories
+//  UIButton+Supplement.h
+//  Demo
 //
-//  Created by 树妖 on 2018/10/26.
-//  Copyright © 2018年 树妖. All rights reserved.
+//  Created by 树妖 on 2019/6/12.
+//  Copyright © 2019 树妖. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIButton (DTAdd)
+@interface UIButton (Supplement)
 /**
  *  倒计时按钮
  *

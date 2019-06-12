@@ -1,12 +1,12 @@
 //
-//  UIView+DTAdd.m
-//  DTCategories
+//  UIView+Supplement.m
+//  Demo
 //
-//  Created by 树妖 on 2018/10/25.
-//  Copyright © 2018年 树妖. All rights reserved.
+//  Created by 树妖 on 2019/6/12.
+//  Copyright © 2019 树妖. All rights reserved.
 //
 
-#import "UIView+DTAdd.h"
+#import "UIView+Supplement.h"
 
 @interface _DTLoadingView : UIView
 
@@ -30,7 +30,7 @@
 - (void)setupViews {
     [self addSubview:self.indicatorView];
     self.indicatorView.center = self.center;
-
+    
     [self addSubview:self.indicatorLabel];
     CGSize labelSize = [self.indicatorLabel.text boundingRectWithSize:CGSizeMake(1000, 1000) options:NSStringDrawingUsesDeviceMetrics attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18]} context:nil].size;
     self.indicatorLabel.frame = CGRectMake(0, CGRectGetMaxY(self.indicatorView.frame)+15, labelSize.width, labelSize.height);
@@ -55,7 +55,7 @@
 
 @end
 
-@implementation UIView (DTAdd)
+@implementation UIView (Supplement)
 
 - (void)showLoadingView {
     if ([self viewWithTag:10086]) {

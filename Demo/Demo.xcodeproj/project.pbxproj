@@ -51,8 +51,8 @@
 		B25F8C5421C37E8200166686 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25F8C5321C37E8200166686 /* CoreText.framework */; };
 		B25F8C5621C37E8700166686 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25F8C5521C37E8700166686 /* CoreFoundation.framework */; };
 		B25F8C5821C37E8E00166686 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B25F8C5721C37E8E00166686 /* libz.tbd */; };
-		B25F8C5E21C3800A00166686 /* UIButton+DTAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F8C5A21C3800A00166686 /* UIButton+DTAdd.m */; };
-		B25F8C5F21C3800A00166686 /* UIView+DTAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F8C5B21C3800A00166686 /* UIView+DTAdd.m */; };
+		B293494222B090EE003BA579 /* UIButton+Supplement.m in Sources */ = {isa = PBXBuildFile; fileRef = B293494122B090EE003BA579 /* UIButton+Supplement.m */; };
+		B293494522B0912E003BA579 /* UIView+Supplement.m in Sources */ = {isa = PBXBuildFile; fileRef = B293494422B0912E003BA579 /* UIView+Supplement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,10 +136,10 @@
 		B25F8C5321C37E8200166686 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B25F8C5521C37E8700166686 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		B25F8C5721C37E8E00166686 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		B25F8C5A21C3800A00166686 /* UIButton+DTAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DTAdd.m"; sourceTree = "<group>"; };
-		B25F8C5B21C3800A00166686 /* UIView+DTAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DTAdd.m"; sourceTree = "<group>"; };
-		B25F8C5C21C3800A00166686 /* UIButton+DTAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DTAdd.h"; sourceTree = "<group>"; };
-		B25F8C5D21C3800A00166686 /* UIView+DTAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DTAdd.h"; sourceTree = "<group>"; };
+		B293494022B090EE003BA579 /* UIButton+Supplement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Supplement.h"; sourceTree = "<group>"; };
+		B293494122B090EE003BA579 /* UIButton+Supplement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Supplement.m"; sourceTree = "<group>"; };
+		B293494322B0912E003BA579 /* UIView+Supplement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Supplement.h"; sourceTree = "<group>"; };
+		B293494422B0912E003BA579 /* UIView+Supplement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Supplement.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,10 +308,10 @@
 		B25F8C5921C37FE100166686 /* DTAdd */ = {
 			isa = PBXGroup;
 			children = (
-				B25F8C5C21C3800A00166686 /* UIButton+DTAdd.h */,
-				B25F8C5A21C3800A00166686 /* UIButton+DTAdd.m */,
-				B25F8C5D21C3800A00166686 /* UIView+DTAdd.h */,
-				B25F8C5B21C3800A00166686 /* UIView+DTAdd.m */,
+				B293494022B090EE003BA579 /* UIButton+Supplement.h */,
+				B293494122B090EE003BA579 /* UIButton+Supplement.m */,
+				B293494322B0912E003BA579 /* UIView+Supplement.h */,
+				B293494422B0912E003BA579 /* UIView+Supplement.m */,
 			);
 			path = DTAdd;
 			sourceTree = "<group>";
@@ -388,8 +388,8 @@
 			files = (
 				B25F8C3A21C37E4400166686 /* NSBundle+YYAdd.m in Sources */,
 				B25F8C3B21C37E4400166686 /* NSObject+YYAdd.m in Sources */,
+				B293494222B090EE003BA579 /* UIButton+Supplement.m in Sources */,
 				B25F8C4621C37E4400166686 /* YYCGUtilities.m in Sources */,
-				B25F8C5F21C3800A00166686 /* UIView+DTAdd.m in Sources */,
 				B25F8C2E21C37E4400166686 /* UIApplication+YYAdd.m in Sources */,
 				B25F8C3621C37E4400166686 /* UIControl+YYAdd.m in Sources */,
 				B25F8C4721C37E4400166686 /* CALayer+YYAdd.m in Sources */,
@@ -412,7 +412,6 @@
 				B25F8C3121C37E4400166686 /* UIScreen+YYAdd.m in Sources */,
 				B25F8C2F21C37E4400166686 /* UITableView+YYAdd.m in Sources */,
 				B25F8C2D21C37E4400166686 /* UIDevice+YYAdd.m in Sources */,
-				B25F8C5E21C3800A00166686 /* UIButton+DTAdd.m in Sources */,
 				B25F8C3C21C37E4400166686 /* NSData+YYAdd.m in Sources */,
 				B25F8C3221C37E4400166686 /* UIView+YYAdd.m in Sources */,
 				B25F8C2A21C37E4400166686 /* UITextField+YYAdd.m in Sources */,
@@ -421,6 +420,7 @@
 				B25F8C4121C37E4400166686 /* NSDate+YYAdd.m in Sources */,
 				B25F8C2C21C37E4400166686 /* UIColor+YYAdd.m in Sources */,
 				B25F8C3021C37E4400166686 /* UIScrollView+YYAdd.m in Sources */,
+				B293494522B0912E003BA579 /* UIView+Supplement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,7 +563,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MFPCVBA88;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -579,7 +581,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MFPCVBA88;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
