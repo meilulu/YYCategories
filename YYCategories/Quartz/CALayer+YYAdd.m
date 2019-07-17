@@ -44,11 +44,11 @@ YYSYNTH_DUMMY_CLASS(CALayer_YYAdd)
     return data;
 }
 
-- (void)setLayerShadow:(UIColor*)color offset:(CGSize)offset radius:(CGFloat)radius {
+- (void)setLayerShadow:(UIColor*)color offset:(CGSize)offset radius:(CGFloat)radius opacity:(CGFloat)opacity{
     self.shadowColor = color.CGColor;
     self.shadowOffset = offset;
     self.shadowRadius = radius;
-    self.shadowOpacity = 1;
+    self.shadowOpacity = opacity;
     self.shouldRasterize = YES;
     self.rasterizationScale = [UIScreen mainScreen].scale;
 }

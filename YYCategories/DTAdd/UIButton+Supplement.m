@@ -9,7 +9,7 @@
 #import "UIButton+Supplement.h"
 
 @implementation UIButton (Supplement)
-- (void)startWithTime:(NSInteger)timeLine title:(NSString *)title countDownTitle:(NSString *)subTitle mainColor:(UIColor *)mColor countColor:(UIColor *)color {
+- (void)dt_startWithTime:(NSInteger)timeLine title:(NSString *)title countDownTitle:(NSString *)subTitle mainColor:(UIColor *)mColor countColor:(UIColor *)color {
     
     //倒计时时间
     __block NSInteger timeOut = timeLine;

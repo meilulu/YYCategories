@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param mColor   还没倒计时时的颜色
  *  @param color    倒计时时的颜色
  */
-- (void)startWithTime:(NSInteger)timeLine title:(NSString *)title countDownTitle:(NSString *)subTitle mainColor:(UIColor *)mColor countColor:(UIColor *)color;
+- (void)dt_startWithTime:(NSInteger)timeLine title:(NSString *)title countDownTitle:(NSString *)subTitle mainColor:(UIColor *)mColor countColor:(UIColor *)color;
 @end
 
 NS_ASSUME_NONNULL_END

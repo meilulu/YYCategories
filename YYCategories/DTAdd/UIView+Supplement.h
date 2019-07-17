@@ -11,8 +11,16 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (Supplement)
-- (void)showLoadingView;
-- (void)hideLoadingView;
+/**
+ 显示一个loadView
+ */
+- (void)dt_showLoadingView;
+
+
+/**
+ 关闭上面的loadView
+ */
+- (void)dt_hideLoadingView;
 @end
 
 NS_ASSUME_NONNULL_END

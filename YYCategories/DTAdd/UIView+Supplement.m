@@ -57,7 +57,7 @@
 
 @implementation UIView (Supplement)
 
-- (void)showLoadingView {
+- (void)dt_showLoadingView  {
     if ([self viewWithTag:10086]) {
         NSLog(@"loadingView已经存在，不要重复添加");
         return;
@@ -73,7 +73,7 @@
     }];
 }
 
-- (void)hideLoadingView {
+- (void)dt_hideLoadingView {
     _DTLoadingView *loadingView = [self viewWithTag:10086];
     if (loadingView) {
         [UIView animateWithDuration:0.3 animations:^{

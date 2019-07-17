@@ -169,6 +169,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param size  The new size to be scaled, values should be positive.
  
  @return      The new image with the given size.
+ 
  */
 - (nullable UIImage *)imageByResizeToSize:(CGSize)size;
 

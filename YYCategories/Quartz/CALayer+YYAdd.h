@@ -35,8 +35,9 @@ NS_ASSUME_NONNULL_BEGIN
  @param color  Shadow Color
  @param offset Shadow offset
  @param radius Shadow radius
+ @param opacity Shadow opacity
  */
-- (void)setLayerShadow:(UIColor*)color offset:(CGSize)offset radius:(CGFloat)radius;
+- (void)setLayerShadow:(UIColor*)color offset:(CGSize)offset radius:(CGFloat)radius opacity:(CGFloat)opacity;
 
 /**
  Remove all sublayers.

@@ -53,6 +53,7 @@
 		B25F8C5821C37E8E00166686 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B25F8C5721C37E8E00166686 /* libz.tbd */; };
 		B293494222B090EE003BA579 /* UIButton+Supplement.m in Sources */ = {isa = PBXBuildFile; fileRef = B293494122B090EE003BA579 /* UIButton+Supplement.m */; };
 		B293494522B0912E003BA579 /* UIView+Supplement.m in Sources */ = {isa = PBXBuildFile; fileRef = B293494422B0912E003BA579 /* UIView+Supplement.m */; };
+		B2E56A6622DF066100AB8D16 /* UIColor+Supplement.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E56A6522DF066100AB8D16 /* UIColor+Supplement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +141,8 @@
 		B293494122B090EE003BA579 /* UIButton+Supplement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Supplement.m"; sourceTree = "<group>"; };
 		B293494322B0912E003BA579 /* UIView+Supplement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Supplement.h"; sourceTree = "<group>"; };
 		B293494422B0912E003BA579 /* UIView+Supplement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Supplement.m"; sourceTree = "<group>"; };
+		B2E56A6422DF066100AB8D16 /* UIColor+Supplement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Supplement.h"; sourceTree = "<group>"; };
+		B2E56A6522DF066100AB8D16 /* UIColor+Supplement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Supplement.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +315,8 @@
 				B293494122B090EE003BA579 /* UIButton+Supplement.m */,
 				B293494322B0912E003BA579 /* UIView+Supplement.h */,
 				B293494422B0912E003BA579 /* UIView+Supplement.m */,
+				B2E56A6422DF066100AB8D16 /* UIColor+Supplement.h */,
+				B2E56A6522DF066100AB8D16 /* UIColor+Supplement.m */,
 			);
 			path = DTAdd;
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 				B25F8C3621C37E4400166686 /* UIControl+YYAdd.m in Sources */,
 				B25F8C4721C37E4400166686 /* CALayer+YYAdd.m in Sources */,
 				B25F8C3921C37E4400166686 /* NSNumber+YYAdd.m in Sources */,
+				B2E56A6622DF066100AB8D16 /* UIColor+Supplement.m in Sources */,
 				B25F8BD721C37DC200166686 /* ViewController.m in Sources */,
 				B25F8C3D21C37E4400166686 /* NSThread+YYAdd.m in Sources */,
 				B25F8C3321C37E4400166686 /* UIBarButtonItem+YYAdd.m in Sources */,
