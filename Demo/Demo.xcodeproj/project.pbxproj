@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		874B59742367C9AA0045AB87 /* NSString+Supplement.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B59732367C9AA0045AB87 /* NSString+Supplement.m */; };
+		87C8FEF723877A370038EE8B /* CALayer+Supplement.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C8FEF523877A370038EE8B /* CALayer+Supplement.m */; };
 		B25F8BD421C37DC200166686 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F8BD321C37DC200166686 /* AppDelegate.m */; };
 		B25F8BD721C37DC200166686 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F8BD621C37DC200166686 /* ViewController.m */; };
 		B25F8BDA21C37DC200166686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25F8BD821C37DC200166686 /* Main.storyboard */; };
@@ -57,6 +59,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		874B59722367C9AA0045AB87 /* NSString+Supplement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Supplement.h"; sourceTree = "<group>"; };
+		874B59732367C9AA0045AB87 /* NSString+Supplement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Supplement.m"; sourceTree = "<group>"; };
+		87C8FEF523877A370038EE8B /* CALayer+Supplement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Supplement.m"; sourceTree = "<group>"; };
+		87C8FEF623877A370038EE8B /* CALayer+Supplement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Supplement.h"; sourceTree = "<group>"; };
 		B25F8BCF21C37DC200166686 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25F8BD221C37DC200166686 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B25F8BD321C37DC200166686 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -202,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				B25F8BE921C37E4300166686 /* YYCategories.h */,
-				B25F8C5921C37FE100166686 /* DTAdd */,
+				B25F8C5921C37FE100166686 /* DTSupplement */,
 				B25F8BEA21C37E4300166686 /* UIKit */,
 				B25F8C0721C37E4300166686 /* Foundation */,
 				B25F8C2421C37E4400166686 /* YYCategoriesMacro.h */,
@@ -308,17 +314,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B25F8C5921C37FE100166686 /* DTAdd */ = {
+		B25F8C5921C37FE100166686 /* DTSupplement */ = {
 			isa = PBXGroup;
 			children = (
+				87C8FEF623877A370038EE8B /* CALayer+Supplement.h */,
+				87C8FEF523877A370038EE8B /* CALayer+Supplement.m */,
 				B293494022B090EE003BA579 /* UIButton+Supplement.h */,
 				B293494122B090EE003BA579 /* UIButton+Supplement.m */,
 				B293494322B0912E003BA579 /* UIView+Supplement.h */,
 				B293494422B0912E003BA579 /* UIView+Supplement.m */,
 				B2E56A6422DF066100AB8D16 /* UIColor+Supplement.h */,
 				B2E56A6522DF066100AB8D16 /* UIColor+Supplement.m */,
+				874B59722367C9AA0045AB87 /* NSString+Supplement.h */,
+				874B59732367C9AA0045AB87 /* NSString+Supplement.m */,
 			);
-			path = DTAdd;
+			path = DTSupplement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +416,7 @@
 				B25F8C3821C37E4400166686 /* NSArray+YYAdd.m in Sources */,
 				B25F8C4521C37E4400166686 /* NSObject+YYAddForKVO.m in Sources */,
 				B25F8C2B21C37E4400166686 /* UIBezierPath+YYAdd.m in Sources */,
+				874B59742367C9AA0045AB87 /* NSString+Supplement.m in Sources */,
 				B25F8C3721C37E4400166686 /* UIFont+YYAdd.m in Sources */,
 				B25F8C4321C37E4400166686 /* NSNotificationCenter+YYAdd.m in Sources */,
 				B25F8C3F21C37E4400166686 /* NSTimer+YYAdd.m in Sources */,
@@ -426,6 +437,7 @@
 				B25F8C4121C37E4400166686 /* NSDate+YYAdd.m in Sources */,
 				B25F8C2C21C37E4400166686 /* UIColor+YYAdd.m in Sources */,
 				B25F8C3021C37E4400166686 /* UIScrollView+YYAdd.m in Sources */,
+				87C8FEF723877A370038EE8B /* CALayer+Supplement.m in Sources */,
 				B293494522B0912E003BA579 /* UIView+Supplement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,7 +581,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8MFPCVBA88;
+				DEVELOPMENT_TEAM = 2Y4CDLQVP8;
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

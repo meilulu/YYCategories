@@ -32,11 +32,11 @@
 }
 
 - (void)doRightAction {
-    [self.view showLoadingView];
+    [self.view dt_showLoadingView];
 }
 
 - (void)doLeftAction {
-    [self.view hideLoadingView];
+    [self.view dt_hideLoadingView];
 }
 
 @end
