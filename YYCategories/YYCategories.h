@@ -49,6 +49,9 @@ FOUNDATION_EXPORT const unsigned char YYCategoriesVersionString[];
 //DTAdd
 #import <YYCategories/UIButton+Supplement.h>
 #import <YYCategories/UIView+Supplement.h>
+#import <YYCategories/CALayer+Supplement.h>
+#import <YYCategories/UIColor+Supplement.h>
+#import <YYCategories/NSString+Supplement.h>
 
 #else
 #import "YYCategoriesMacro.h"
@@ -86,6 +89,9 @@ FOUNDATION_EXPORT const unsigned char YYCategoriesVersionString[];
 //DTAdd
 #import "UIButton+Supplement.h"
 #import "UIView+Supplement.h"
+#import "CALayer+Supplement.h"
+#import "UIColor+Supplement.h"
+#import "NSString+Supplement.h"
 
 #endif
 
