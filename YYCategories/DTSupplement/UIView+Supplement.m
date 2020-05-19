@@ -7,11 +7,12 @@
 //
 
 #import "UIView+Supplement.h"
-
+#import "Masonry.h"
 @interface _DTLoadingView : UIView
 
 @property (strong, nonatomic) UIActivityIndicatorView *indicatorView;
 @property (strong, nonatomic) UILabel *indicatorLabel;
+@property (strong, nonatomic) UIView *containerView;
 @end
 
 @implementation _DTLoadingView
@@ -28,13 +29,24 @@
 }
 
 - (void)setupViews {
-    [self addSubview:self.indicatorView];
-    self.indicatorView.center = self.center;
+    [self addSubview:self.containerView];
+    [self.containerView addSubview:self.indicatorView];
+    [self.containerView addSubview:self.indicatorLabel];
     
-    [self addSubview:self.indicatorLabel];
-    CGSize labelSize = [self.indicatorLabel.text boundingRectWithSize:CGSizeMake(1000, 1000) options:NSStringDrawingUsesDeviceMetrics attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18]} context:nil].size;
-    self.indicatorLabel.frame = CGRectMake(0, CGRectGetMaxY(self.indicatorView.frame)+15, labelSize.width, labelSize.height);
-    self.indicatorLabel.center = CGPointMake(self.center.x, self.indicatorLabel.center.y);
+    [self.containerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self);
+        make.centerY.equalTo(self).offset(-80);
+    }];
+    
+    [self.indicatorView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.bottom.equalTo(self.containerView);
+    }];
+    
+    [self.indicatorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.indicatorView.mas_right).offset(5);
+        make.top.bottom.right.equalTo(self.containerView);
+    }];
+    
 }
 
 - (UIActivityIndicatorView *)indicatorView {
@@ -49,8 +61,18 @@
     if (!_indicatorLabel) {
         _indicatorLabel = [UILabel new];
         _indicatorLabel.text = @"正在加载，请稍候...";
+        _indicatorLabel.font = [UIFont systemFontOfSize:20];
+        _indicatorLabel.textColor = [UIColor systemGrayColor];
     }
     return _indicatorLabel;
+}
+
+- (UIView *)containerView {
+    if (!_containerView) {
+        _containerView = [UIView new];
+    }
+    
+    return _containerView;
 }
 
 @end
